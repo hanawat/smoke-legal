@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>モクナビ — 喫煙所マップ</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f6fa;
+      --fg: #1c1c1e;
+      --muted: #6b6b70;
+      --accent: #475f91;
+      --border: #e2e2e7;
+      --card: #e6ebf3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141b28;
+        --fg: #ececef;
+        --muted: #9a9aa0;
+        --accent: #a8bfef;
+        --border: #2a2a2e;
+        --card: #202b3d;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+      line-height: 1.8;
+      -webkit-text-size-adjust: 100%;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrap {
+      max-width: 560px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.2em;
+    }
+    .tagline {
+      color: var(--muted);
+      margin: 0 0 2.5em;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    .links a {
+      display: block;
+      padding: 16px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 600;
+      transition: border-color 0.15s ease;
+    }
+    .links a:hover {
+      border-color: var(--accent);
+    }
+    footer {
+      margin-top: 3em;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>モクナビ</h1>
+    <p class="tagline">MOKUNAVI — 喫煙所マップ</p>
+
+    <div class="links">
+      <a href="./privacy.html">プライバシーポリシー</a>
+      <a href="./terms.html">利用規約</a>
+    </div>
+
+    <footer>
+      <p>
+        お問い合わせ:
+        <a href="mailto:hanawa.takuro@gmail.com">hanawa.takuro@gmail.com</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
